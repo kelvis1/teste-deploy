@@ -1,5 +1,4 @@
 import express from "express";
-import serverless from "serverless-http";
 
 const app = express();
 
@@ -12,5 +11,5 @@ app.get("/", (req, res) => {
 });
 
 // Exporta como função serverless (obrigatório na Vercel)
-export default serverless(app)
+export default app;
 
