@@ -12,4 +12,5 @@ app.get("/", (req, res) => {
 });
 
 // Exporta como função serverless (obrigatório na Vercel)
-export const handler = serverless(app);
+export default serverless(app)
+
