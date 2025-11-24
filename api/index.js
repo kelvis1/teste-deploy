@@ -5,7 +5,7 @@ const app = express();
 // Endpoint GET /
 app.get("/", (req, res) => {
   res.json({
-    status: "API ONLINE",
+    status: "API ONLINE tesste",
     hora: new Date().toISOString()
   });
 });
